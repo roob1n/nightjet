@@ -1,0 +1,29 @@
+{
+    "destinations": [
+      {
+        "name": "Paris",
+        "country": "France",
+        "description": "The capital of France known for its romantic atmosphere and iconic landmarks."
+      },
+      {
+        "name": "Berlin",
+        "country": "Germany",
+        "description": "The capital of Germany renowned for its history, art, and vibrant culture."
+      },
+      {
+        "name": "Vienna",
+        "country": "Austria",
+        "description": "The capital of Austria famous for its rich musical heritage and imperial architecture."
+      },
+      {
+        "name": "Amsterdam",
+        "country": "Netherlands",
+        "description": "The capital of the Netherlands featuring picturesque canals and a vibrant nightlife."
+      },
+      {
+        "name": "Barcelona",
+        "country": "Spain",
+        "description": "A vibrant city in Spain known for its unique architecture, art, and beautiful beaches."
+      }
+    ]
+}

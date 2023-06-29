@@ -1,11 +1,19 @@
 <mat-grid-list cols="3">
   <mat-grid-tile colspan="3">
-    <app-search-form></app-search-form>
+    <app-search-form (search)="showResults($event, results, filter)"></app-search-form>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="3" *ngIf="searching">
+    <div>
+      <h1>Wir suchen nach den besten Angeboten...</h1>
+    </div>
+    <div>
+      <img src="assets/images/logo.png">
+    </div>
   </mat-grid-tile>
   <mat-grid-tile>
-    <app-search-filter></app-search-filter>
+    <app-search-filter #filter></app-search-filter>
   </mat-grid-tile>
   <mat-grid-tile colspan="2">
-    <app-result-list></app-result-list>
+    <app-result-list #results></app-result-list>
   </mat-grid-tile>
 </mat-grid-list>

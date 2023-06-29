@@ -1,8 +1,9 @@
 import {Component} from '@angular/core';
 import {ResultListComponent} from "./components/result-list/result-list.component";
-import {SearchFormComponent} from "./components/search-form/search-form.component";
+import {SearchFilter, SearchFormComponent} from "./components/search-form/search-form.component";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {SearchFilterComponent} from "./components/search-filter/search-filter.component";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-search',
@@ -13,8 +14,22 @@ import {SearchFilterComponent} from "./components/search-filter/search-filter.co
     ResultListComponent,
     SearchFormComponent,
     MatGridListModule,
-    SearchFilterComponent
+    SearchFilterComponent,
+    NgIf
   ]
 })
 export class SearchComponent {
+  searching = false;
+
+  showResults(
+    $event: SearchFilter,
+    results: ResultListComponent,
+    filter: SearchFilterComponent) {
+    this.searching = true;
+    setTimeout(() => {
+      this.searching = false;
+      results.isVisible = true;
+      filter.isVisible = true;
+    }, 2000);
+  }
 }

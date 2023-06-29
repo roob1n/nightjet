@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {MatCalendarCellClassFunction, MatDatepickerModule} from "@angular/material/datepicker";
 import {MatInputModule} from "@angular/material/input";
 import {FormControl, ReactiveFormsModule} from "@angular/forms";
@@ -7,6 +7,11 @@ import {AsyncPipe, NgForOf} from "@angular/common";
 import {MatButtonModule} from "@angular/material/button";
 import {map, Observable, startWith, Subject} from "rxjs";
 import {MatNativeDateModule} from "@angular/material/core";
+
+export interface SearchFilter {
+  fromDate: any;
+  toDate: any;
+}
 
 @Component({
   selector: 'app-search-form',
@@ -25,6 +30,11 @@ import {MatNativeDateModule} from "@angular/material/core";
   standalone: true
 })
 export class SearchFormComponent implements OnInit {
+
+  @Output()
+  search = new EventEmitter<SearchFilter>();
+
+
   fromControl = new FormControl('');
   toControl = new FormControl('');
 
@@ -39,9 +49,9 @@ export class SearchFormComponent implements OnInit {
       const date = cellDate.getDate();
       const random = Math.floor(Math.random() * 3) + 1;
 
-      if(date % 3 === random) {
+      if (date % 3 === random) {
         return 'date-availability-low'
-      } else if((date % 3 + 1) === random) {
+      } else if ((date % 3 + 1) === random) {
         return 'date-availability-medium'
       } else {
         return 'date-availability-high'
@@ -66,8 +76,8 @@ export class SearchFormComponent implements OnInit {
     return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
 
-  search() {
-
+  doSearch() {
+    this.search.emit({fromDate: this.fromControl.value, toDate: this.toControl.value});
   }
 
 }

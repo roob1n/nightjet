@@ -37,9 +37,16 @@ export class SearchFormComponent implements OnInit {
     // Only highligh dates inside the month view.
     if (view === 'month') {
       const date = cellDate.getDate();
-      return date === 1 || date === 20 ? 'example-custom-date-class' : '';
-    }
+      const random = Math.floor(Math.random() * 3) + 1;
 
+      if(date % 3 === random) {
+        return 'date-availability-low'
+      } else if((date % 3 + 1) === random) {
+        return 'date-availability-medium'
+      } else {
+        return 'date-availability-high'
+      }
+    }
     return '';
   };
 

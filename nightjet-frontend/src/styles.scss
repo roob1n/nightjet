@@ -2,3 +2,15 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.date-availability-low {
+    background-color: #FFADAD !important;
+  }
+
+  .date-availability-medium {
+    background-color: #FDFFB6 !important;
+  }
+
+  .date-availability-high {
+    background-color: #CAFFBF !important;
+  }

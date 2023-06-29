@@ -1,66 +1,11 @@
-<form class="example-form">
-  <mat-form-field class="example-full-width">
-    <mat-label>Von</mat-label>
-    <input type="text"
-           placeholder="Von"
-           aria-label="Von"
-           matInput
-           [formControl]="fromControl"
-           [matAutocomplete]="autoFrom">
-    <mat-autocomplete #autoFrom="matAutocomplete">
-      <mat-option *ngFor="let option of fromOptions | async" [value]="option">
-        {{option}}
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
-    <mat-label>Bis</mat-label>
-    <input type="text"
-           placeholder="Bis"
-           aria-label="Bis"
-           matInput
-           [formControl]="toControl"
-           [matAutocomplete]="autoTo">
-    <mat-autocomplete #autoTo="matAutocomplete">
-      <mat-option *ngFor="let option of toOptions | async" [value]="option">
-        {{option}}
-      </mat-option>
-    </mat-autocomplete>
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
-    <mat-label>Abfahrt</mat-label>
-    <input matInput [matDatepicker]="pickerAb">
-    <mat-datepicker-toggle matIconSuffix [for]="pickerAb"></mat-datepicker-toggle>
-    <mat-datepicker [dateClass]="dateClass" #pickerAb></mat-datepicker>
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
-    <mat-label>Ankunft</mat-label>
-    <input matInput [matDatepicker]="pickerAn">
-    <mat-datepicker-toggle matIconSuffix [for]="pickerAn"></mat-datepicker-toggle>
-    <mat-datepicker [dateClass]="dateClass" #pickerAn></mat-datepicker>
-  </mat-form-field>
-  <button type="button" (click)="search()" mat-raised-button color="primary" class="sizeit">
-    Suchen
-  </button>
-
-  <div class="results-list">
-    <h3>Deine Reissn</h3>
-    <mat-list class="example-list-wrapping">
-      <mat-list-item lines="3">
-        <span matListItemTitle>Wien</span>
-        <span
-        >Secondary line that will wrap because the list lines is explicitly set to 3 lines. Text
-      inside of a `matListItemTitle` or `matListItemLine` will never wrap.
-    </span>
-      </mat-list-item>
-      <mat-list-item lines="3">
-        <span matListItemTitle>Zürich</span>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-        non proident, sunt in culpa qui officia deserunt mollit anim id est
-      </mat-list-item>
-    </mat-list>
-  </div>
-</form>
+<mat-grid-list cols="3">
+  <mat-grid-tile colspan="3">
+    <app-search-form></app-search-form>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h3>Filter</h3>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2">
+    <app-result-list></app-result-list>
+  </mat-grid-tile>
+</mat-grid-list>

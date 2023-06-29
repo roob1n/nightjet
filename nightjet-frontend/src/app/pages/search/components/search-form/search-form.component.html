@@ -1,0 +1,45 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Von</mat-label>
+    <input type="text"
+           placeholder="Von"
+           aria-label="Von"
+           matInput
+           [formControl]="fromControl"
+           [matAutocomplete]="autoFrom">
+    <mat-autocomplete #autoFrom="matAutocomplete">
+      <mat-option *ngFor="let option of fromOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Bis</mat-label>
+    <input type="text"
+           placeholder="Bis"
+           aria-label="Bis"
+           matInput
+           [formControl]="toControl"
+           [matAutocomplete]="autoTo">
+    <mat-autocomplete #autoTo="matAutocomplete">
+      <mat-option *ngFor="let option of toOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Abfahrt</mat-label>
+    <input matInput [matDatepicker]="pickerAb">
+    <mat-datepicker-toggle matIconSuffix [for]="pickerAb"></mat-datepicker-toggle>
+    <mat-datepicker [dateClass]="dateClass" #pickerAb></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Ankunft</mat-label>
+    <input matInput [matDatepicker]="pickerAn">
+    <mat-datepicker-toggle matIconSuffix [for]="pickerAn"></mat-datepicker-toggle>
+    <mat-datepicker [dateClass]="dateClass" #pickerAn></mat-datepicker>
+  </mat-form-field>
+  <button type="button" (click)="search()" mat-raised-button color="primary" class="sizeit">
+    Suchen
+  </button>
+</form>

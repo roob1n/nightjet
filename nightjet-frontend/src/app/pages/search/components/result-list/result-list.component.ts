@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {MatListModule} from "@angular/material/list";
 import {SearchFilter} from "../search-form/search-form.component";
 import {NgForOf, NgIf} from "@angular/common";
+import {MatCardModule} from "@angular/material/card";
 
 export interface Journey {
   title: string;
@@ -19,7 +20,8 @@ export interface Journey {
   imports: [
     MatListModule,
     NgIf,
-    NgForOf
+    NgForOf,
+    MatCardModule
   ]
 })
 export class ResultListComponent {

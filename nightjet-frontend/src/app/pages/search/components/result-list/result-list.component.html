@@ -1,16 +1,18 @@
 <div class="results-list" *ngIf="isVisible" style="width: 80vh">
   <h3>Deine Reisen</h3>
-  <div *ngFor="let journey of journeyList">
-    <div>{{journey.title}}</div>
-    <div>
-      Abfahrt: {{journey.title2}}
-    </div>
-    <div>
-      Weiterfahrt: {{journey.title3}}
-    </div>
-    <div>
-      Buchen: {{journey.link}}
-    </div>
-  </div>
+  <mat-card *ngFor="let journey of journeyList">
+    <mat-card-content>
+      <div>{{journey.title}}</div>
+      <div>
+        Abfahrt: {{journey.title2}}
+      </div>
+      <div>
+        Weiterfahrt: {{journey.title3}}
+      </div>
+      <div>
+        Buchen: {{journey.link}}
+      </div>
+    </mat-card-content>
+  </mat-card>
   <h3>Ziel</h3>
 </div>

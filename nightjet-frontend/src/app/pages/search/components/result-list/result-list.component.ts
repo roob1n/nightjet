@@ -59,7 +59,7 @@ export class ResultListComponent {
       "title2": "04.07 18:15",
       "title3": "05.07 09:14",
       "image": "vy.png",
-      "link": "",
+      "link": "https://www.vy.se/en/see-travel-suggestions?from=Stockholm%20Central&fromExternalId=SILVER_RAIL%3A1%3A74&to=Kiruna%20station&toExternalId=SILVER_RAIL%3A1602%3A74&passengers=W3siaWQiOjYwLCJhZ2UiOm51bGwsImRpc2NvdW50cyI6W10sImNhdGVnb3J5IjoiQWR1bHQiLCJuYW1lIjoiQWR1bHQifSx7ImlkIjo2MSwiYWdlIjpudWxsLCJkaXNjb3VudHMiOltdLCJjYXRlZ29yeSI6IkFkdWx0IiwibmFtZSI6IkFkdWx0In1d&addons=W3sidHlwZSI6ImJpY3ljbGUiLCJudW1iZXJUb0J1eSI6MH0seyJ0eXBlIjoibGFyZ2VfYW5pbWFsIiwibnVtYmVyVG9CdXkiOjB9LHsidHlwZSI6InNtYWxsX2FuaW1hbCIsIm51bWJlclRvQnV5IjowfSx7InR5cGUiOiJzdHJvbGxlciIsIm51bWJlclRvQnV5IjoxfSx7InR5cGUiOiJ3aGVlbGNoYWlyIiwibnVtYmVyVG9CdXkiOjB9XQ%3D%3D&fromDateTime=2023-07-05T16%3A00%3A38.408Z&fromPosition=59.33,18.05806&toPosition=67.86722,20.20028",
       "duration": "953 km / 15 h 05 min"
     }]
 

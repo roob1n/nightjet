@@ -30,33 +30,27 @@ export class ResultListComponent {
   isVisible = true;
   journeyList = [
     {
-      "title": "Wien",
-      "title2": "", // Arrival date and time
-      "title3": "01.07.2023 21:42", // Departure date and time
+      "title": "Wien - Zürich",
+      "title2": "01.07.2023 21:42", 
+      "title3": "02.07.2023 07:56",
       "link": ""
     },
     {
-      "title": "Zürich",
-      "title2": "02.07.2023 07:56",
-      "title3": "02.07.2023 21:10",
+      "title": "Zürich - Hamburg",
+      "title2": "02.07.2023 21:10",
+      "title3": "03.07.2023 08:15",
       "link": ""
     },
     {
-      "title": "Hamburg",
-      "title2": "03.07.2023 08:15",
-      "title3": "03.07.2023 22:01",
+      "title": "Hamburg - Stockholm",
+      "title2": "03.07.2023 22:01",
+      "title3": "04.07.2023 09:56",
       "link": ""
     },
     {
-      "title": "Stockholm",
-      "title2": "04.07.2023 09:56",
-      "title3": "04.07.2023 18:15",
-      "link": ""
-    },
-    {
-      "title": "Kiruna",
-      "title2": "05.07.2023 09:14",
-      "title3": "",
+      "title": "Stockholm - Kiruna",
+      "title2": "04.07.2023 18:15",
+      "title3": "05.07.2023 09:14",
       "link": ""
     }]
 

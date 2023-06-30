@@ -34,24 +34,28 @@ export class ResultListComponent {
       "title": "Wien - Zürich",
       "title2": "01.07.2023 21:42",
       "title3": "02.07.2023 07:56",
+      "image": "oebb.png",
       "link": ""
     },
     {
       "title": "Zürich - Hamburg",
       "title2": "02.07.2023 21:10",
       "title3": "03.07.2023 08:15",
+      "image": "oebb.png",
       "link": ""
     },
     {
       "title": "Hamburg - Stockholm",
       "title2": "03.07.2023 22:01",
       "title3": "04.07.2023 09:56",
+      "image": "snell.png",
       "link": ""
     },
     {
       "title": "Stockholm - Kiruna",
       "title2": "04.07.2023 18:15",
       "title3": "05.07.2023 09:14",
+      "image": "vy.png",
       "link": ""
     }]
 

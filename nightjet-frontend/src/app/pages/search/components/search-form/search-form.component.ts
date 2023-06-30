@@ -34,14 +34,12 @@ export class SearchFormComponent implements OnInit {
   @Output()
   search = new EventEmitter<SearchFilter>();
 
-
   fromControl = new FormControl('');
   toControl = new FormControl('');
 
   options: string[] = ['Hamburg', 'Kiruna', 'Stockholm', 'Wien', 'Zürich'];
   fromOptions: Observable<string[]> = new Subject();
   toOptions: Observable<string[]> = new Subject();
-
 
   dateClass: MatCalendarCellClassFunction<Date> = (cellDate, view) => {
     // Only highligh dates inside the month view.

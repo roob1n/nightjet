@@ -1,11 +1,13 @@
 import {Component} from '@angular/core';
 import {MatListModule} from "@angular/material/list";
 import {SearchFilter} from "../search-form/search-form.component";
-import {NgIf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 
-export interface Tile {
-  cols: number;
-  rows: number;
+export interface Journey {
+  title: string;
+  title2: string;
+  title3: string;
+  link: string;
   text: string;
 }
 
@@ -16,11 +18,43 @@ export interface Tile {
   standalone: true,
   imports: [
     MatListModule,
-    NgIf
+    NgIf,
+    NgForOf
   ]
 })
 export class ResultListComponent {
-  isVisible = false;
+  isVisible = true;
+  journeyList = [
+    {
+      title: 'Wien',
+      title2: '',
+      title3: '',
+      link: ''
+    },
+    {
+      title: 'Zürich',
+      title2: '',
+      title3: '',
+      link: ''
+    },
+    {
+      title: 'Hamburg',
+      title2: '',
+      title3: '',
+      link: ''
+    },
+    {
+      title: 'Stockholm',
+      title2: '',
+      title3: '',
+      link: ''
+    },
+    {
+      title: 'Kiruna',
+      title2: '',
+      title3: '',
+      link: ''
+    }];
 
   showResults(searchFilter: SearchFilter) {
     console.log(searchFilter);

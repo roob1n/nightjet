@@ -11,5 +11,5 @@ import {NgIf} from "@angular/common";
   standalone: true
 })
 export class SearchFilterComponent {
-  isVisible = false;
+  isVisible = true;
 }

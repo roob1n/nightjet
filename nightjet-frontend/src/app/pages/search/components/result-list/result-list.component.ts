@@ -32,7 +32,7 @@ export class ResultListComponent {
   journeyList = [
     {
       "title": "Wien - Zürich",
-      "title2": "01.07.2023 21:42", 
+      "title2": "01.07.2023 21:42",
       "title3": "02.07.2023 07:56",
       "link": ""
     },

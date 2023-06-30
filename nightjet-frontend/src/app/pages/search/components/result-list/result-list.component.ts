@@ -6,6 +6,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 
 export interface Journey {
+  fromVisible?: boolean;
   title: string;
   title2: string;
   title3: string;
@@ -31,24 +32,28 @@ export class ResultListComponent {
   journeyList = [
     {
       "title": "Wien",
+      "fromVisible": false,
       "title2": "", // Arrival date and time
       "title3": "01.07.2023 21:42", // Departure date and time
       "link": ""
     },
     {
       "title": "Zürich",
+      "fromVisible": true,
       "title2": "02.07.2023 07:56",
       "title3": "02.07.2023 21:10",
       "link": ""
     },
     {
       "title": "Hamburg",
+      "fromVisible": true,
       "title2": "03.07.2023 08:15",
       "title3": "03.07.2023 22:01",
       "link": ""
     },
     {
       "title": "Stockholm",
+      "fromVisible": true,
       "title2": "04.07.2023 09:56",
       "title3": "04.07.2023 18:15",
       "link": ""

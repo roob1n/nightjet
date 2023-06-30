@@ -2,14 +2,14 @@
   <mat-grid-tile colspan="5">
     <app-search-form (search)="showResults($event, results, filter)"></app-search-form>
   </mat-grid-tile>
-  <mat-grid-tile colspan="5" *ngIf="searching">
+  <div *ngIf="searching" style="position: absolute; left: 30%; top: 10%; z-index: 3; background-color: white">
     <div>
       <h1>Wir suchen nach den besten Angeboten...</h1>
     </div>
     <div>
-      <img style="width: 200px" src="assets/images/logo.png">
+      <img src="assets/images/logo.png">
     </div>
-  </mat-grid-tile>
+  </div>
   <mat-grid-tile colspan="1" rowspan="4">
     <app-search-filter #filter></app-search-filter>
   </mat-grid-tile>

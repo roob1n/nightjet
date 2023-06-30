@@ -1,21 +1,20 @@
 <div class="results-list" *ngIf="isVisible" style="width: 100vh">
   <h3>Deine Reisen</h3>
-  <mat-card *ngFor="let journey of journeyList" class="mt-4">
+  <mat-card *ngFor="let journey of journeyList" class="mt-4 rokas-card">
     <mat-card-content class="rokas">
       <h2>{{journey.title}}</h2>
       <div>
         <img src="assets/images/{{journey.image}}" style="width: 50px">
       </div>
       <div>
-        <span>Ankunft:</span> {{journey.title2}}
+        <span>Abfahrt:</span> {{journey.title3}}
       </div>
       <div>
-        Abfahrt: {{journey.title3}}
+        <span>Ankunft:</span> {{journey.title2}}
       </div>
       <div style="float:right;">
         <a mat-raised-button color="accent" href="{{journey.link}}" target="_blank">Ticket</a>
       </div>
     </mat-card-content>
   </mat-card>
-  <h3>Ziel</h3>
 </div>

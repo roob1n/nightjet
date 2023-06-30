@@ -6,6 +6,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 
 export interface Journey {
+  fromVisible?: boolean;
   title: string;
   title2: string;
   title3: string;

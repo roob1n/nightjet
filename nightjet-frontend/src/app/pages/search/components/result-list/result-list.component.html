@@ -4,7 +4,7 @@
     <mat-card-content class="rokas">
       <h2>{{journey.title}}</h2>
       <div>
-        Ankunft: {{journey.title2}}
+        <span *ngIf="journey?.fromVisible">Ankunft:</span> {{journey.title2}}
       </div>
       <div>
         Abfahrt: {{journey.title3}}

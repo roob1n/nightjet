@@ -31,32 +31,32 @@ export class ResultListComponent {
   journeyList = [
     {
       "title": "Wien",
-      "title2": "2023-07-01 10:00 AM", // Arrival date and time
-      "title3": "2023-07-05 03:30 PM", // Departure date and time
+      "title2": "", // Arrival date and time
+      "title3": "01.07.2023 21:42", // Departure date and time
       "link": ""
     },
     {
       "title": "Zürich",
-      "title2": "2023-07-02 09:30 AM",
-      "title3": "2023-07-04 02:45 PM",
+      "title2": "02.07.2023 07:56",
+      "title3": "02.07.2023 21:10",
       "link": ""
     },
     {
       "title": "Hamburg",
-      "title2": "2023-07-03 11:15 AM",
-      "title3": "2023-07-06 04:20 PM",
+      "title2": "03.07.2023 08:15",
+      "title3": "03.07.2023 22:01",
       "link": ""
     },
     {
       "title": "Stockholm",
-      "title2": "2023-07-04 08:45 AM",
-      "title3": "2023-07-07 01:10 PM",
+      "title2": "04.07.2023 09:56",
+      "title3": "04.07.2023 18:15",
       "link": ""
     },
     {
       "title": "Kiruna",
-      "title2": "2023-07-05 02:00 PM",
-      "title3": "2023-07-08 10:30 AM",
+      "title2": "05.07.2023 09:14",
+      "title3": "",
       "link": ""
     }]
 

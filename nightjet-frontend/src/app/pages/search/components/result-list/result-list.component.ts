@@ -32,31 +32,35 @@ export class ResultListComponent {
   journeyList = [
     {
       "title": "Wien - Zürich",
-      "title2": "01.07.2023 21:42",
-      "title3": "02.07.2023 07:56",
+      "title2": "01.07 21:42",
+      "title3": "02.07 07:56",
       "image": "oebb.png",
-      "link": ""
+      "link": "",
+      "duration": "592 km / 8 h 53 min"
     },
     {
       "title": "Zürich - Hamburg",
-      "title2": "02.07.2023 21:10",
-      "title3": "03.07.2023 08:15",
+      "title2": "02.07 21:10",
+      "title3": "03.07 08:15",
       "image": "oebb.png",
-      "link": ""
+      "link": "",
+      "duration": "658 km / 10 h 55 min"
     },
     {
       "title": "Hamburg - Stockholm",
-      "title2": "03.07.2023 22:01",
-      "title3": "04.07.2023 09:56",
+      "title2": "03.07 22:01",
+      "title3": "04.07 09:56",
       "image": "snell.png",
-      "link": ""
+      "link": "",
+      "duration": "807 km / 10 h 55 min"
     },
     {
       "title": "Stockholm - Kiruna",
-      "title2": "04.07.2023 18:15",
-      "title3": "05.07.2023 09:14",
+      "title2": "04.07 18:15",
+      "title3": "05.07 09:14",
       "image": "vy.png",
-      "link": ""
+      "link": "",
+      "duration": "953 km / 15 h 05 min"
     }]
 
   showResults(searchFilter: SearchFilter) {

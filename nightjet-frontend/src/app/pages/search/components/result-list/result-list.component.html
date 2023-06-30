@@ -3,13 +3,13 @@
   <mat-card *ngFor="let journey of journeyList" class="mt-4 rokas-card">
     <mat-card-content class="rokas">
       <h2>{{journey.title}}</h2>
-      <div>
+      <div style="padding-right: 20px">
         <img src="assets/images/{{journey.image}}" style="width: 50px">
       </div>
       <div>
         <span>Abfahrt:</span> {{journey.title3}}
       </div>
-      <div style="width: 200px;padding: 0 20px;">
+      <div class="more-info">
         <hr/>
       </div>
       <div>

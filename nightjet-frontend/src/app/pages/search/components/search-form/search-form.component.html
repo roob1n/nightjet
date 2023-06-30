@@ -28,6 +28,20 @@
     </mat-autocomplete>
   </mat-form-field>
   <mat-form-field class="example-full-width">
+    <mat-label>Via</mat-label>
+    <input type="text"
+           placeholder="Via"
+           aria-label="Via"
+           matInput
+           [formControl]="viaControl"
+           [matAutocomplete]="autoVia">
+    <mat-autocomplete #autoVia="matAutocomplete">
+      <mat-option *ngFor="let option of viaOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
     <mat-label>Abfahrt</mat-label>
     <input matInput [matDatepicker]="pickerAb">
     <mat-datepicker-toggle matIconSuffix [for]="pickerAb"></mat-datepicker-toggle>
